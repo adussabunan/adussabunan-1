@@ -7,6 +7,9 @@ android {
     compileSdk 34
     namespace 'com.whiterose.clock'
 
+    aaptOptions {
+        noCompress "png"
+}
     defaultConfig {
         applicationId "com.whiterose.clock"
         minSdk 26
