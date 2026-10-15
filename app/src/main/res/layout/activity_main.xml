@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <!-- Label atas -->
+    <TextView
+        android:text="SYSTEM TIME"
+        android:textColor="#00B82E"
+        android:textSize="10sp"
+        android:letterSpacing="0.35"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- HH MM SS dalam satu baris -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvHour"
+            android:text="00"
+            android:textColor="#00FF41"
+            android:textSize="72sp"
+            android:fontFamily="monospace"
+            android:shadowColor="#8000FF41"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvColon1"
+            android:text=":"
+            android:textColor="#00FF41"
+            android:textSize="72sp"
+            android:fontFamily="monospace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvMinute"
+            android:text="00"
+            android:textColor="#00FF41"
+            android:textSize="72sp"
+            android:fontFamily="monospace"
+            android:shadowColor="#8000FF41"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvColon2"
+            android:text=":"
+            android:textColor="#00FF41"
+            android:textSize="72sp"
+            android:fontFamily="monospace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvSecond"
+            android:text="00"
+            android:textColor="#00B82E"
+            android:textSize="72sp"
+            android:fontFamily="monospace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <!-- Progress bar detik -->
+    <ProgressBar
+        android:id="@+id/progressSeconds"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="280dp"
+        android:layout_height="3dp"
+        android:max="100"
+        android:progress="0"
+        android:progressTint="#00FF41"
+        android:progressBackgroundTint="#003A0E"
+        android:layout_marginTop="12dp"/>
+
+    <!-- Tanggal -->
+    <TextView
+        android:id="@+id/tvDate"
+        android:text="--- -- --- ----"
+        android:textColor="#00B82E"
+        android:textSize="11sp"
+        android:letterSpacing="0.25"
+        android:fontFamily="monospace"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:background="#001A07"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Status beep -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:text="BEEP SERVICE: OFF"
+        android:textColor="#005010"
+        android:textSize="9sp"
+        android:letterSpacing="0.2"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Tombol Start -->
+    <Button
+        android:id="@+id/btnService"
+        android:text="START BEEP SERVICE"
+        android:textColor="#000000"
+        android:backgroundTint="#00FF41"
+        android:fontFamily="monospace"
+        android:letterSpacing="0.1"
+        android:layout_width="220dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Tombol Stop -->
+    <Button
+        android:id="@+id/btnStop"
+        android:text="STOP SERVICE"
+        android:textColor="#00FF41"
+        android:backgroundTint="#001A07"
+        android:fontFamily="monospace"
+        android:letterSpacing="0.1"
+        android:enabled="false"
+        android:layout_width="220dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Info screensaver -->
+    <TextView
+        android:text="Screensaver: Settings → Display → Screen saver → Whiterose Clock"
+        android:textColor="#003A0E"
+        android:textSize="9sp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
