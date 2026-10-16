@@ -1,4 +1,4 @@
-package com.whiterose.clock
+package com.chiara.beep
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -7,12 +7,13 @@ import android.os.Build
 
 class BootReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
-        if (intent.action == Intent.ACTION_BOOT_COMPLETED) {
-            val serviceIntent = Intent(context, BeepService::class.java)
+        val prefs = PrefsHelper(context)
+        if (prefs.serviceOn) {
+            val si = Intent(context, BeepService::class.java)
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                context.startForegroundService(serviceIntent)
+                context.startForegroundService(si)
             } else {
-                context.startService(serviceIntent)
+                context.startService(si)
             }
         }
     }
