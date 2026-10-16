@@ -5,13 +5,10 @@ plugins {
 
 android {
     compileSdk 34
-    namespace 'com.whiterose.clock'
+    namespace 'com.chiara.beep'
 
-    aaptOptions {
-        noCompress "png"
-}
     defaultConfig {
-        applicationId "com.whiterose.clock"
+        applicationId "com.chiara.beep"
         minSdk 26
         targetSdk 34
         versionCode 1
