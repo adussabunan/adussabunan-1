@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView android:text="PENGINGAT CUSTOM"
+        android:textColor="#005A1A" android:textSize="10sp"
+        android:letterSpacing="0.4" android:fontFamily="monospace"
+        android:layout_marginBottom="24dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <TextView android:text="Beep berbunyi pada jam tertentu setiap hari."
+        android:textColor="#005A1A" android:textSize="11sp"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="24dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <TextView android:id="@+id/tvReminderList"
+        android:text="Belum ada pengingat"
+        android:textColor="#00FF41" android:textSize="22sp"
+        android:fontFamily="monospace" android:lineSpacingMultiplier="1.6"
+        android:layout_weight="1"
+        android:layout_width="wrap_content" android:layout_height="0dp"/>
+
+    <Button android:id="@+id/btnAddReminder"
+        android:text="+ TAMBAH JAM"
+        android:textColor="#000000" android:backgroundTint="#00FF41"
+        android:fontFamily="monospace"
+        android:layout_width="match_parent" android:layout_height="48dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button android:id="@+id/btnClearAll"
+        android:text="HAPUS SEMUA"
+        android:textColor="#FF3333" android:backgroundTint="#1A0000"
+        android:fontFamily="monospace"
+        android:layout_width="match_parent" android:layout_height="44dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button android:id="@+id/btnBack"
+        android:text="← KEMBALI"
+        android:textColor="#00FF41" android:backgroundTint="#001A07"
+        android:fontFamily="monospace"
+        android:layout_width="match_parent" android:layout_height="44dp"/>
+
+</LinearLayout>
